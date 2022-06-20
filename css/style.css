@@ -1,0 +1,197 @@
+.hero-section{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.hero-section{
+    color: #f8f8f2;
+    font-weight: 900;
+    font-size: calc(30px + 35*(100vw - 300px)/900);
+    text-transform: uppercase;
+    line-height: .96;
+    margin: 0 0 1.875rem;
+}
+h2,display-4{
+    font-family:Bungee;
+} 
+.hero-section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-section .logo{
+    position: absolute;
+    top: 10px;
+left: 10px;
+z-index: 9;
+}
+
+.hero-section .btn-transparent{
+position: absolute;
+top: 10px;
+right: 0px;
+z-index: 999;
+box-shadow: none !important;
+}
+.hero-section .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-section .hero-text  h1{
+    color: white;
+    font-weight: 400;
+}
+.hero-section .hero-text .btn{
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 20px 30px;
+    border-radius: 0;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.hero-section .hero-text .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.about-section{
+    padding: 100px 0;
+}
+
+.btn-theme{
+    border-width: 2px;
+    padding: 10px 30px;
+    border-radius: 0;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.parks{
+    padding: 100px 0;
+    background-color: #eee;
+}
+.parks .card{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.parks .card img{
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+.parks .card.active img{
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+footer{
+    /* position: relative; */
+    padding: 400px 0 100px;
+    background-image:url(../img/mountain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+footer a{
+    text-decoration: none;
+}
+
+footer .social-Links a{
+    width: 40px;
+    display: inline-block;
+    color: rgb(210, 223, 228);
+    /* text-align: center; */
+}
+
+footer a:hover{
+    color: var(--bs-success) !important;
+}
+
+
+/* parks page */
+
+
+.parks .card{
+height: 100%;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    z-index: 99;
+    transition: 0.5s;
+
+
+}
+#menu.active{
+    right: 0;
+}
+
+.stage{
+     
+  position: absolute;
+  top: 70px;
+right: -300px;
+}
+.p{
+  
+  color: #000000 ;  
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+  cursor: pointer;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  font-family: Century Gothic;
+  letter-spacing: 4px;
+}
+.div{
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 180px;
+  height: 35px;
+  margin-top: 6%;
+ transition-duration: 0.5s;
+
+}
+.div a{
+text-decoration: none;
+color: black;
+ 
+}
+.p:hover{
+  background: #28B463;
+  color: white;
+}
+.div:nth-child(odd){
+  transform: perspective(300px) rotateY(45deg);
+  box-shadow: -2px 2px 7px gray;
+}
+.div:nth-child(even){
+  transform: perspective(300px) rotateY(-35deg);
+    box-shadow: 2px 2px 7px gray;
+}
+.div:hover{
+  transform: rotateY(0);
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 0px;
+}
+#detail-para{
+height: 300px;
+overflow: hidden;
+}
